@@ -1,6 +1,85 @@
+/* Add this to your existing CSS or style.css file */
+
+body {
+  background-color: lightcoral;
+  font-family: Arial, sans-serif; /* Change the font family */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+  display: flex; /* Use flexbox to center the container */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center the contents */
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Center the grid horizontally */
   width: 400px;
   height: 300px;
+  border: 10px solid #000; /* Optional: Add border for visualization */
 }
+
+#play-again {
+  display: block;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: blueviolet;
+  font-family: Arial, sans-serif; /* Change the font family */
+  font-size: 18px; /* Change the font size */
+  margin-top: 50px;
+}
+
+#timer, #result, #congratulations {
+  margin-top: 20px;
+  font-family: Arial, sans-serif; /* Change the font family */
+  font-size: 24px; /* Change the font size */
+  text-align: center;
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+@media (max-width: 300px) {
+  .container {
+    padding: 30px;
+  }
+
+  .grid {
+    width: 250px;
+    height: 250px;
+  }
+
+  #play-again {
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  #timer, #result, #congratulations {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+}
+
